@@ -19,7 +19,7 @@ namespace LibraryManagementSystem;
 
     public void Borrow()
     {
-        if (IsAvailable)
+        if (!IsAvailable)
             IsAvailable = false;
     }
 
