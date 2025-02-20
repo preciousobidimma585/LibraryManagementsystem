@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryManagementSystem.Models;
 
 namespace LibraryManagementSystem
 
@@ -27,16 +28,12 @@ namespace LibraryManagementSystem
 
         public User GetUser(string userName)
         {
-#pragma warning disable CS8603 // Possible null reference return.
             return Users.FirstOrDefault(u => u.Name.Equals(userName, StringComparison.OrdinalIgnoreCase));
-#pragma warning restore CS8603 // Possible null reference return.
         }
 
         public Book GetBook(string title)
         {
-#pragma warning disable CS8603 // Possible null reference return.
             return Books.FirstOrDefault(b => b.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
-#pragma warning restore CS8603 // Possible null reference return.
         }
 
         public void DisplayAvailableBooks()

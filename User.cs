@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem
+using System;
+using System.Collections.Generic;
 
+namespace LibraryManagementSystem.Models
 {
     public class User : IUser
     {
-        public string  Name { get; private set; }
+        public string Name { get; private set; }
         private List<Book> BorrowedBooks { get; } = new List<Book>();
 
         public User(string name)
@@ -43,5 +45,25 @@ namespace LibraryManagementSystem
                 Console.WriteLine($"'{book.Title}' is not borrowed by {Name}.");
             }
         }
+
+        public void ViewBorrowedBooks()
+        {
+            if (BorrowedBooks.Count == 0)
+            {
+                Console.WriteLine($"{Name} has not borrowed any books.");
+                return;
+            }
+
+            Console.WriteLine($"{Name}'s Borrowed Books:");
+            foreach (var book in BorrowedBooks)
+            {
+                Console.WriteLine($"- {book.Title} by {book.Author}");
+            }
+        }
     }
 }
+    
+
+
+
+    

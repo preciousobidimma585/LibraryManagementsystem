@@ -10,5 +10,6 @@ namespace LibraryManagementSystem
         string Name {get;}
         void BorrowBook(Book book);
         void ReturnBook(Book book);
+        void ViewBorrowedBooks();
     }
 }
