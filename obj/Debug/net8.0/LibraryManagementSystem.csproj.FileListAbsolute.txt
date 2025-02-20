@@ -12,3 +12,4 @@
 /Users/macbookair/Desktop/LibraryManagementSystem/LibraryManagementSystem/obj/Debug/net8.0/LibraryManagementSystem.pdb
 /Users/macbookair/Desktop/LibraryManagementSystem/LibraryManagementSystem/obj/Debug/net8.0/LibraryManagementSystem.genruntimeconfig.cache
 /Users/macbookair/Desktop/LibraryManagementSystem/LibraryManagementSystem/obj/Debug/net8.0/ref/LibraryManagementSystem.dll
+/Users/macbookair/Desktop/LibraryManagementSystem/LibraryManagementSystem/obj/Debug/net8.0/LibraryManagementSystem.sourcelink.json

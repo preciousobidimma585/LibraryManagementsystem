@@ -4,7 +4,9 @@ using LibraryManagementSystem;
 class Program
 {
     static void Main()
+
     {
+        Start :
         Library library = new Library();
 
         
@@ -83,6 +85,7 @@ class Program
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
+            goto Start;
         }
     }
 }
