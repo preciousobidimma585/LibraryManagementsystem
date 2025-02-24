@@ -7,7 +7,7 @@ using LibraryManagementSystem.Models;
 namespace LibraryManagementSystem
 
 {
-    public class Library
+    internal class Library
     {
         private List<Book> Books { get; } = new List<Book>();
         private List<User> Users { get; } = new List<User>();

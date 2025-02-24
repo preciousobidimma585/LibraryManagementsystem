@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace LibraryManagementSystem.Models
 {
-    public class User : IUser
+    internal class User : IUser
     {
         public string Name { get; private set; }
         private List<Book> BorrowedBooks { get; } = new List<Book>();

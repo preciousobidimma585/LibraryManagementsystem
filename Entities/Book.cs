@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace LibraryManagementSystem;
- public class Book : IBook
+ internal class Book : IBook
 {
     public string Title { get; set; }
     public string Author { get; set; }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem
 {
-    public interface IUser
+    internal interface IUser
     {
         string Name {get;}
         void BorrowBook(Book book);
