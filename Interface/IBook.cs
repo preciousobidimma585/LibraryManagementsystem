@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem
 {
-    public interface IBook
+    internal interface IBook
     {
         string Title {get; set;}
         string Author {get; set;}
